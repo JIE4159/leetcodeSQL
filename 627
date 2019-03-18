@@ -1,0 +1,8 @@
+##swap salary, do not use select statement for this problem, use update statement
+update salary
+set 
+sex=case sex
+when 'm' then 'f'
+else 'm'
+end;
+
