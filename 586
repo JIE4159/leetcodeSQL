@@ -1,0 +1,5 @@
+customer placing the largest number of orders
+select customer_number
+group by customer_number
+order by count(*) DESC
+limit 1
