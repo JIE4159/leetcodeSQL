@@ -1,0 +1,5 @@
+###shortest distance in a line
+select min(abs(a.x-b.x)) as 'shortest'
+from point AS a
+join point AS b
+on a.x=b.x
