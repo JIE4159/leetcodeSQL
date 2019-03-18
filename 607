@@ -1,0 +1,5 @@
+##sales person. output all the names in the table salesperson who didn't have sales to company 'RED'
+select name from salesperson s
+where s.sales_id not in 
+(select o.sales_id from orders o left join company c on o.com_id=c_com_id
+where c.name='RED')
