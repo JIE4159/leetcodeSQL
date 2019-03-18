@@ -1,0 +1,4 @@
+##write a sql query to find all duplicate emails in a table named Person
+select distinct Email from Person
+group by Email
+having count(1)>1
