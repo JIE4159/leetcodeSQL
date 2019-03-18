@@ -1,0 +1,4 @@
+## customers who never order
+select name as customers from customers left join Orders
+on Orders.customerId=Customers.Id
+where Orders.CustomerId is NULL
