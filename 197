@@ -1,0 +1,5 @@
+## rising temperature
+select weather.id as 'ID'
+from weather
+join weather w on datediff(weather.date,w.date)=1
+and weatheR.Temperature>w.Temperature
