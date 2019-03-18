@@ -1,0 +1,5 @@
+select astree.id
+if (isnull(atree.p_id),'root',if(tree.id in (select p_id from tree),'inner','leaf'))type
+from 
+tree astree
+order by astree.id
