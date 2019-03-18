@@ -1,0 +1,5 @@
+##select all employee's name and bonus whose bonus is <1000
+select name, bonus from Emplpyee E
+left join Bonus B
+on E.empId=B.empId
+where bonus>1000 or bonus is null
