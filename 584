@@ -1,0 +1,2 @@
+## find customer referee. given a table customer holding customers information and the referee, write a query to return the ist of customers not referred by the person id'2'
+select name from customer where referee id<>2 or referee_id is null
